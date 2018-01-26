@@ -25,7 +25,8 @@ btn.handleClick(events: .touchUpInside, click: { (sender) in
 
 })
 ```
-- UIImage + Arrow 带尖角的图片，效果如下
+- UIImage + Arrow 带尖角的图片，效果如下:
+
 ![](/imgs/arrow.png)
 ```
 imageView1.image = image?.arrowed(.left, resizeTo: .init(width: 200, height: 100))
