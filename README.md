@@ -65,3 +65,10 @@ let predicate = NSPredicate.init(format: "SELF MATCHES %@", reg)
 let result = predicate.evaluate(with: text)
 ```
 **需要Xcode 9、Swift 4**
+
+- 安装
+```
+pod "FGToolKit"
+or
+下载后将lib文件夹托入项目中
+```
