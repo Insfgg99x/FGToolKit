@@ -33,10 +33,8 @@ view.addSubview(imageView1)
 ```
 - Date + Format
 ```
-lb.text = Date.init(timeIntervalSinceNow: -48 * 3600).formatedTime
+lb.text = Date.init(timeIntervalSinceNow: -48 * 3600).formatedTime//星期三18:14
 ```
-举例如显示为:星期三18:14
-
 - UIColor + Hex
 ```
 lb.textColor = hexcolor(0xa115c6)
