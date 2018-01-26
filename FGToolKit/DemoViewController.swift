@@ -80,6 +80,7 @@ class DemoViewController: UIViewController {
         case .hex:
             let lb = UILabel.init(frame: .init(x: 50, y: 200, width: view.bounds.size.width - 100, height: 80))
             lb.textColor = hexcolor(0xa115c6)
+            lb.hex = 0xf4f4f4
             lb.textAlignment = .center
             lb.font = .systemFont(ofSize: 40)
             view.addSubview(lb)
@@ -88,8 +89,8 @@ class DemoViewController: UIViewController {
             lb.text = fmt.string(from: Date.init())
             timer = Timer.fg_scheduledTimer(interval: 1, repeats: true, block: { (sender) in
                 lb.text = fmt.string(from: Date.init())
-                let hex = arc4random_uniform(0xffffff) + 1
-                lb.textColor = UIColor.init(hex: UInt(hex))
+                lb.textColor = UIColor.init(hex: UInt(arc4random_uniform(0xffffff) + 1))
+                lb.hex = UInt(arc4random_uniform(0xffffff) + 1)
             })
             break
         case .cirle:

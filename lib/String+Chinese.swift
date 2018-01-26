@@ -37,4 +37,10 @@ extension String {
             return String(py[..<index]).uppercased()
         }
     }
+    func chineseBetween(min:Int,max:Int) -> Bool {
+        let reg = "[\\u4e00-\\u9fa5]{\(min),\(max)}"
+        let predicate = NSPredicate.init(format: "SELF MATCHES %@", reg)
+        let result = predicate.evaluate(with: self)
+        return result
+    }
 }
