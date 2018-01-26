@@ -58,9 +58,10 @@ lb.addTap(handler: { (sender) in
 "你好".firstLetter//H
 "abc哈1x".hasChinese//true
 ```
-示例（10-20个汉字的正则）
+- 示例（10-20个汉字的正则）
 ```
 let reg = "[\\u4e00-\\u9fa5]{10,20}"
 let predicate = NSPredicate.init(format: "SELF MATCHES %@", reg)
 let result = predicate.evaluate(with: text)
 ```
+**需要Xcode 9、Swift 4**
