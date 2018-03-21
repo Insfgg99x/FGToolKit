@@ -10,8 +10,7 @@ import UIKit
 private var UIViewTapActionHandlerKey = "UIViewTapActionHandlerKey"
 private var UIViewLongPressActionHandlerKey = "UIViewLongPressActionHandlerKey"
 
-extension UIView {
-    
+public extension UIView {
     func addTap(handler:((UITapGestureRecognizer) -> ())) {
         isUserInteractionEnabled = true
         objc_setAssociatedObject(self, &UIViewTapActionHandlerKey, handler, .OBJC_ASSOCIATION_COPY)

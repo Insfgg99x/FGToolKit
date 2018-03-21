@@ -14,7 +14,7 @@ public func hexcolor(_ hex:UInt) -> UIColor {
 }
 
 //hex value color
-extension UIColor {
+public extension UIColor {
     convenience init(hex:UInt) {
         let b = CGFloat(hex & 0xff) / CGFloat(255.0)
         let g = CGFloat((hex >> 8) & 0xff) / (255.0)
@@ -44,7 +44,7 @@ extension UIColor {
     }
 }
 private var UIViewHexBackgroundColorKey = "UIViewHexBackgroundColorKey"
-extension UIView {
+public extension UIView {
     var hex:UInt? {
         get{
             return objc_getAssociatedObject(self, &UIViewHexBackgroundColorKey) as? UInt

@@ -10,7 +10,7 @@ import Foundation
 
 private var TimerBlockActionKey = "TimerBlockActionKey"
 
-extension Timer {
+public extension Timer {
     //iOS 10以下的也可以用block的timer了
     class func fg_scheduledTimer(interval:TimeInterval,repeats:Bool,block:((_ t:Timer)->Void)) -> Timer {
         let timer=Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(fg_timerAction(_:)), userInfo: nil, repeats: repeats)

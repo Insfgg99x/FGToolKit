@@ -1,0 +1,6 @@
+framework module Pods_FGToolKit {
+  umbrella header "Pods-FGToolKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

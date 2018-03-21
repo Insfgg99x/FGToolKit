@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C35C086B20624FCC00C31866 /* FGWebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C086A20624FCC00C31866 /* FGWebImage.swift */; };
+		C35C086E2062505700C31866 /* Maker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C086C2062505700C31866 /* Maker.swift */; };
+		C35C086F2062505700C31866 /* ImageCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C086D2062505700C31866 /* ImageCropView.swift */; };
+		C35C0871206253E100C31866 /* skate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C35C0870206253E100C31866 /* skate.jpg */; };
 		C3A65803201B04E4009FCA6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A65802201B04E4009FCA6D /* AppDelegate.swift */; };
 		C3A65805201B04E4009FCA6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A65804201B04E4009FCA6D /* ViewController.swift */; };
 		C3A65808201B04E4009FCA6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A65806201B04E4009FCA6D /* Main.storyboard */; };
@@ -23,9 +27,16 @@
 		C3A65829201B2257009FCA6D /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = C3A65828201B2257009FCA6D /* test.png */; };
 		C3A6582B201B2398009FCA6D /* UIImage+Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A6582A201B2398009FCA6D /* UIImage+Arrow.swift */; };
 		C3A6582D201B2927009FCA6D /* test2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3A6582C201B2927009FCA6D /* test2.jpg */; };
+		DCEAB001ED3D2F5750786169 /* Pods_FGToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446B0A53B10AD54ECB765500 /* Pods_FGToolKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		446B0A53B10AD54ECB765500 /* Pods_FGToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FGToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79AA4D58EC8474092A7AC2B5 /* Pods-FGToolKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGToolKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-FGToolKit/Pods-FGToolKit.release.xcconfig"; sourceTree = "<group>"; };
+		C35C086A20624FCC00C31866 /* FGWebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FGWebImage.swift; sourceTree = "<group>"; };
+		C35C086C2062505700C31866 /* Maker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maker.swift; sourceTree = "<group>"; };
+		C35C086D2062505700C31866 /* ImageCropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCropView.swift; sourceTree = "<group>"; };
+		C35C0870206253E100C31866 /* skate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skate.jpg; sourceTree = "<group>"; };
 		C3A657FF201B04E4009FCA6D /* FGToolKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FGToolKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3A65802201B04E4009FCA6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3A65804201B04E4009FCA6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +55,7 @@
 		C3A65828201B2257009FCA6D /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		C3A6582A201B2398009FCA6D /* UIImage+Arrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Arrow.swift"; sourceTree = "<group>"; };
 		C3A6582C201B2927009FCA6D /* test2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test2.jpg; sourceTree = "<group>"; };
+		E969C487B9154B9FC62FDFA9 /* Pods-FGToolKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGToolKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FGToolKit/Pods-FGToolKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,12 +63,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCEAB001ED3D2F5750786169 /* Pods_FGToolKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EC93017A346895043DC9692 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E969C487B9154B9FC62FDFA9 /* Pods-FGToolKit.debug.xcconfig */,
+				79AA4D58EC8474092A7AC2B5 /* Pods-FGToolKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		663FBA077804AA242B2386ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				446B0A53B10AD54ECB765500 /* Pods_FGToolKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C3A657F6201B04E4009FCA6D = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +94,8 @@
 				C3A65801201B04E4009FCA6D /* FGToolKit */,
 				C3A65827201B2243009FCA6D /* Source */,
 				C3A65800201B04E4009FCA6D /* Products */,
+				0EC93017A346895043DC9692 /* Pods */,
+				663FBA077804AA242B2386ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +132,9 @@
 				C3A6581F201B0A77009FCA6D /* UIImage+Circle.swift */,
 				C3A65821201B0CCB009FCA6D /* UIView+Action.swift */,
 				C3A65823201B0F88009FCA6D /* String+Chinese.swift */,
+				C35C086A20624FCC00C31866 /* FGWebImage.swift */,
+				C35C086D2062505700C31866 /* ImageCropView.swift */,
+				C35C086C2062505700C31866 /* Maker.swift */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -109,6 +144,7 @@
 			children = (
 				C3A6582C201B2927009FCA6D /* test2.jpg */,
 				C3A65828201B2257009FCA6D /* test.png */,
+				C35C0870206253E100C31866 /* skate.jpg */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -120,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3A65811201B04E4009FCA6D /* Build configuration list for PBXNativeTarget "FGToolKit" */;
 			buildPhases = (
+				813768F257EA176885311135 /* [CP] Check Pods Manifest.lock */,
 				C3A657FB201B04E4009FCA6D /* Sources */,
 				C3A657FC201B04E4009FCA6D /* Frameworks */,
 				C3A657FD201B04E4009FCA6D /* Resources */,
+				62AB64F80C1BE33034B74DE3 /* [CP] Embed Pods Frameworks */,
+				B8D7ABCEF53CEF949CEC6029 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,11 +215,66 @@
 				C3A6582D201B2927009FCA6D /* test2.jpg in Resources */,
 				C3A6580A201B04E4009FCA6D /* Assets.xcassets in Resources */,
 				C3A65808201B04E4009FCA6D /* Main.storyboard in Resources */,
+				C35C0871206253E100C31866 /* skate.jpg in Resources */,
 				C3A65829201B2257009FCA6D /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62AB64F80C1BE33034B74DE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FGToolKit/Pods-FGToolKit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FGToolKit/Pods-FGToolKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		813768F257EA176885311135 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FGToolKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8D7ABCEF53CEF949CEC6029 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FGToolKit/Pods-FGToolKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C3A657FB201B04E4009FCA6D /* Sources */ = {
@@ -192,11 +286,14 @@
 				C3A6581C201B05E3009FCA6D /* Date+Format.swift in Sources */,
 				C3A6582B201B2398009FCA6D /* UIImage+Arrow.swift in Sources */,
 				C3A65817201B051B009FCA6D /* Timer+Block.swift in Sources */,
+				C35C086B20624FCC00C31866 /* FGWebImage.swift in Sources */,
 				C3A65824201B0F88009FCA6D /* String+Chinese.swift in Sources */,
 				C3A65826201B1A1E009FCA6D /* DemoViewController.swift in Sources */,
 				C3A65818201B051B009FCA6D /* UIControl+Action.swift in Sources */,
 				C3A65820201B0A77009FCA6D /* UIImage+Circle.swift in Sources */,
+				C35C086E2062505700C31866 /* Maker.swift in Sources */,
 				C3A65805201B04E4009FCA6D /* ViewController.swift in Sources */,
+				C35C086F2062505700C31866 /* ImageCropView.swift in Sources */,
 				C3A65803201B04E4009FCA6D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +429,7 @@
 		};
 		C3A65812201B04E4009FCA6D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E969C487B9154B9FC62FDFA9 /* Pods-FGToolKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -346,6 +444,7 @@
 		};
 		C3A65813201B04E4009FCA6D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79AA4D58EC8474092A7AC2B5 /* Pods-FGToolKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

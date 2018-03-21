@@ -18,6 +18,9 @@ enum DemoType : Int {
     case cirle
     case action
     case chinese
+    case webimage
+    case crop
+    case make
 }
 
 class DemoViewController: UIViewController {
@@ -129,6 +132,58 @@ class DemoViewController: UIViewController {
             lb.addTap(handler: { (sender) in
                 wklb?.text = wklb?.text?.pinyin
             })
+            break
+        case .webimage:
+            let url = "http://upload-images.jianshu.io/upload_images/937405-e91a649f7a7df2a0.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+            let imv = UIImageView.init(frame: .init(x: (view.bounds.size.width - 200)/2, y: 200, width: 200, height: 200))
+            view.addSubview(imv)
+            imv.fg_setImageWithUrl(url, nil)
+            break
+        case .crop:
+            let imv = UIImageView.init(frame: .init(x: (view.bounds.size.width - 300)/2, y: 200, width: 300, height: 100))
+            imv.backgroundColor = hexcolor(0xf4f4f4)
+            view.addSubview(imv)
+            let tipLb = Maker.makeLb(text: "点击裁剪图片",
+                                     aligment: .center,
+                                     font: UIFont.systemFont(ofSize: 16),
+                                     textColor: hexcolor(0x333333),
+                                     numberOfLines: 1)
+            imv.addSubview(tipLb)
+            tipLb.snp.makeConstraints({ (make) in
+                make.edges.equalTo(imv)
+            })
+            imv.addTap(handler: { (sender) in
+                sender.view?.isUserInteractionEnabled = false
+                let image = UIImage.init(named: "skate.jpg")!
+                let cropView = ImageCropView.init(frame: UIScreen.main.bounds, image: image, mode: 3.0/1.0, hanlder: { (cropedImage) in
+                    (sender.view as! UIImageView).image = cropedImage
+                })
+                let window = UIApplication.shared.keyWindow
+                window?.addSubview(cropView)
+                sender.view?.isUserInteractionEnabled = true
+            })
+            break
+        case .make:
+            let lb = Maker.makeLb(text: nil,
+                                  aligment: .center,
+                                  font: UIFont.systemFont(ofSize: 16),
+                                  textColor: hexcolor(0x666666),
+                                  numberOfLines: 0)
+            view.addSubview(lb)
+            lb.snp.makeConstraints({ (make) in
+                make.left.equalToSuperview().offset(100)
+                make.right.equalToSuperview().offset(-100)
+                make.top.equalToSuperview().offset(200)
+                make.height.equalTo(100)
+            })
+            
+            let p1 = [NSAttributedStringKey.font:UIFont.systemFont(ofSize: 16),NSAttributedStringKey.foregroundColor:hexcolor(0x666666)]
+            let p2 = [NSAttributedStringKey.font:UIFont.systemFont(ofSize: 20),NSAttributedStringKey.foregroundColor:UIColor.red]
+            
+            let attributeText = Maker.makeAttributeText(prefix: ("我是通过Maker一句话快速创建的控件，以及通过Maker快速创建的属性文本。\n欢迎使用 ",p1), suffix: ("FGToolKit",p2))
+            
+            lb.attributedText = attributeText
+            
             break
         default:
             break

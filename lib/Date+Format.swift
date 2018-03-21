@@ -15,7 +15,7 @@ private let day_hours:Int = 24
 
 private var DateFormatedTimeKey = "DateFormatedTimeKey"
 
-extension Date {
+public extension Date {
     var formatedTime:String? {
         get {
             var time=objc_getAssociatedObject(self, &DateFormatedTimeKey) as? String

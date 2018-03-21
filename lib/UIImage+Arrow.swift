@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
- enum UIImageArrowDirection {
+ public enum UIImageArrowDirection {
      case left
      case right
  }
@@ -18,7 +18,7 @@ private let arrowWidth:CGFloat=6;
 private let arrowHeight:CGFloat=10;
 private let arrowTopMargin:CGFloat=13;//距离顶部距离
 
-extension UIImage{
+public extension UIImage{
     func arrowed(_ direction:UIImageArrowDirection, resizeTo:CGSize) -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(resizeTo, false, 0.0)
         if direction == .left {

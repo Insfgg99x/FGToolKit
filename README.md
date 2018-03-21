@@ -1,6 +1,8 @@
-FGToolKit
+# FGToolKit
 
-**Swift便利工具集**
+Swift便利工具集
+
+## Contents
 
 - [x] Timer + Block(iOS 10以下也可以直接将timer的事件回调到代码块里)
 - [x] UIControl + Action(按钮事件直接回调到代码块里)
@@ -10,8 +12,14 @@ FGToolKit
 - [x] UIImage + Circle(高性能圆形图片)
 - [x] UIView + Action(像用UIButton一样去用UIView、UILabel等，直接将点击事件回调到代码块里)
 - [x] String + Chinese(汉字转拼音、判断是否有汉字、汉字的首个大写字母)
+- [x] FGWebImage Swift版轻量级的图片加载工具，功能类似SDWebImage，只有100多行代码
+- [x] ImageCropView 可以设置任意比例裁剪图片
+- [x] Maker 快速创建UI控件，快速生成属性字符串等，节约开发时间
 
 后续会持续更新...
+
+
+## Feture
 
 - Timer + Block
 ```
@@ -64,11 +72,47 @@ let reg = "[\\u4e00-\\u9fa5]{10,20}"
 let predicate = NSPredicate.init(format: "SELF MATCHES %@", reg)
 let result = predicate.evaluate(with: text)
 ```
-**需要Xcode 9、Swift 4**
 
-- 安装
+- FGWebImage
+```swift
+imageView.fg_setImageWithUrl(url, placeHolderImage)
 ```
-pod "FGToolKit"
-or
-下载后将lib文件夹托入项目中
+
+- ImageCropView
+
+```swift
+let cropView = ImageCropView.init(frame: UIScreen.main.bounds, image: image, mode: 3.0/1.0, hanlder: { (cropedImage) in
+	imageView.image = cropedImage
+})
+UIApplication.shared.keyWindow?.addSubview(cropView)
+```
+
+- Maker
+
+attribute text
+```swift
+let op1 = [NSAttributedStringKey.font: font14, NSAttributedStringKey.foregroundColor: hexcolor(0x444444)]
+let op2 = [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 18), NSAttributedStringKey.foregroundColor: hexcolor(0x1db593)]
+let attributeText = Maker.makeAttributeText(prefix: ("  你的密码是: ", op1), mid: ("123456", op2), suffix: (" 请牢记!", op1))
+```
+
+UI
+```swift
+let loginBtn = Maker.makeBtn(title: "登录账号",
+                                     textColor: hexcolor(0x666666),
+                                     font: font14,
+                                     bgcolor: nil,
+                                     target: self,
+                                     action: #selector(jumpLogin(_:)))
+view.addSubview(loginBtn)
+```
+
+## Required
+
+- [x] Xcode 9.x
+- [x] Swift 4.x
+
+## 安装
+```
+pod "FGToolKit", "~>2.0"
 ```

@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
     var pinyin:String? {
         get {
             let tmp = NSMutableString.init(string: self) as CFMutableString

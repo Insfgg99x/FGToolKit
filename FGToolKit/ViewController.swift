@@ -19,7 +19,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     private func setup() {
         title = "FGToolKitExample"
-        array = ["Timer + Block", "UIControl + Action", "UIImage + Arrow", "Date + Format", "UIColor + Hex", "UIImage + Circle", "UIView + Action", "String + Chinese"]
+        array = ["Timer + Block",
+                 "UIControl + Action",
+                 "UIImage + Arrow",
+                 "Date + Format",
+                 "UIColor + Hex",
+                 "UIImage + Circle",
+                 "UIView + Action",
+                 "String + Chinese",
+                 "FGWebImage",
+                 "ImageCropView",
+                 "Maker"]
     }
     private func createUI() {
         let tb = UITableView.init(frame: view.bounds, style: .plain)

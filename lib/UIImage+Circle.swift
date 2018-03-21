@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension UIImage {
+public extension UIImage {
     //MARK: -
     //MARK: 高性能圆形图片
     func cirled() -> UIImage? {

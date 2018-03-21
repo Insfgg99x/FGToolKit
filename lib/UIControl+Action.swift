@@ -10,7 +10,7 @@ import UIKit
 
 private var UIControlActionHandlerKey = "UIControlActionHandlerKey"
 
-extension UIControl {
+public extension UIControl {
     @objc func handleClick(events:UIControlEvents,click:((UIControl)->Void)){
         objc_setAssociatedObject(self, &UIControlActionHandlerKey, click, objc_AssociationPolicy.OBJC_ASSOCIATION_COPY_NONATOMIC)
         self.addTarget(self, action: #selector(sc_handleClick(_:)), for: events)
