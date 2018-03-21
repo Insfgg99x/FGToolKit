@@ -9,7 +9,8 @@ s.source       = { :git => "https://github.com/Insfgg99x/FGToolKit.git", :tag =>
 s.frameworks   = 'Foundation','UIKit'
 s.ios.deployment_target = '8.0'
 s.source_files = 'lib/*.swift'
-s.requires_arc  = true
+s.requires_arc = true
+s.dependency   'SnapKit'
 
 end
 
