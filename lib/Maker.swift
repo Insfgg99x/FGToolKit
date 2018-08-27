@@ -26,6 +26,9 @@ public class Maker: NSObject {
         if #available(iOS 9.0, *) {
             tbView.cellLayoutMarginsFollowReadableWidth = false
         }
+        if #available(iOS 11.0, *) {
+            tbView.contentInsetAdjustmentBehavior = .never
+        }
         return tbView
     }
     //lb

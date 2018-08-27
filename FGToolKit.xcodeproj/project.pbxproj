@@ -27,6 +27,7 @@
 		C3A65829201B2257009FCA6D /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = C3A65828201B2257009FCA6D /* test.png */; };
 		C3A6582B201B2398009FCA6D /* UIImage+Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A6582A201B2398009FCA6D /* UIImage+Arrow.swift */; };
 		C3A6582D201B2927009FCA6D /* test2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3A6582C201B2927009FCA6D /* test2.jpg */; };
+		C3D08F8A2133DEE3009B1196 /* UITextFiled+ToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D08F892133DEE3009B1196 /* UITextFiled+ToolBar.swift */; };
 		DCEAB001ED3D2F5750786169 /* Pods_FGToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446B0A53B10AD54ECB765500 /* Pods_FGToolKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		C3A65828201B2257009FCA6D /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		C3A6582A201B2398009FCA6D /* UIImage+Arrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Arrow.swift"; sourceTree = "<group>"; };
 		C3A6582C201B2927009FCA6D /* test2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test2.jpg; sourceTree = "<group>"; };
+		C3D08F892133DEE3009B1196 /* UITextFiled+ToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFiled+ToolBar.swift"; sourceTree = "<group>"; };
 		E969C487B9154B9FC62FDFA9 /* Pods-FGToolKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGToolKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FGToolKit/Pods-FGToolKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +137,7 @@
 				C35C086A20624FCC00C31866 /* FGWebImage.swift */,
 				C35C086D2062505700C31866 /* ImageCropView.swift */,
 				C35C086C2062505700C31866 /* Maker.swift */,
+				C3D08F892133DEE3009B1196 /* UITextFiled+ToolBar.swift */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				C3A65805201B04E4009FCA6D /* ViewController.swift in Sources */,
 				C35C086F2062505700C31866 /* ImageCropView.swift in Sources */,
 				C3A65803201B04E4009FCA6D /* AppDelegate.swift in Sources */,
+				C3D08F8A2133DEE3009B1196 /* UITextFiled+ToolBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

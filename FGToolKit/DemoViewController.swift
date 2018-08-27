@@ -21,6 +21,7 @@ enum DemoType : Int {
     case webimage
     case crop
     case make
+    case toolbar
 }
 
 class DemoViewController: UIViewController {
@@ -183,7 +184,14 @@ class DemoViewController: UIViewController {
             let attributeText = Maker.makeAttributeText(prefix: ("我是通过Maker一句话快速创建的控件，以及通过Maker快速创建的属性文本。\n欢迎使用 ",p1), suffix: ("FGToolKit",p2))
             
             lb.attributedText = attributeText
-            
+            break
+        case .toolbar:
+            let tf = UITextField.init(frame: .init(x: 0, y: 0, width: 300, height: 40))
+            tf.borderStyle = .roundedRect
+            view.addSubview(tf)
+            tf.center = view.center
+            //一行代码开启辅助输入视图
+            tf.enableToolBar()
             break
         default:
             break

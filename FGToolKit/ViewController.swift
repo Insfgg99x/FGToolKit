@@ -29,7 +29,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                  "String + Chinese",
                  "FGWebImage",
                  "ImageCropView",
-                 "Maker"]
+                 "Maker",
+                 "UITextField + ToolBar"]
     }
     private func createUI() {
         let tb = UITableView.init(frame: view.bounds, style: .plain)
