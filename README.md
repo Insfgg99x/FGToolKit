@@ -114,5 +114,6 @@ view.addSubview(loginBtn)
 
 ## 安装
 ```
-pod "FGToolKit", "~>2.0"
+pod repo update
+pod "FGToolKit", "~>2.1"
 ```
