@@ -41,3 +41,13 @@ extension UITextView {
         resignFirstResponder()
     }
 }
+
+extension UISearchBar {
+    public func enableToolBar() {
+        let bar = createToolBar(self, action: #selector(resignKeyboardAction))
+        inputAccessoryView = bar
+    }
+    @objc private func resignKeyboardAction() {
+        resignFirstResponder()
+    }
+}

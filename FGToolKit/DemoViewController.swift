@@ -178,8 +178,8 @@ class DemoViewController: UIViewController {
                 make.height.equalTo(100)
             })
             
-            let p1 = [NSAttributedStringKey.font:UIFont.systemFont(ofSize: 16),NSAttributedStringKey.foregroundColor:hexcolor(0x666666)]
-            let p2 = [NSAttributedStringKey.font:UIFont.systemFont(ofSize: 20),NSAttributedStringKey.foregroundColor:UIColor.red]
+            let p1 = [NSAttributedString.Key.font:UIFont.systemFont(ofSize: 16),NSAttributedString.Key.foregroundColor:hexcolor(0x666666)]
+            let p2 = [NSAttributedString.Key.font:UIFont.systemFont(ofSize: 20),NSAttributedString.Key.foregroundColor:UIColor.red]
             
             let attributeText = Maker.makeAttributeText(prefix: ("我是通过Maker一句话快速创建的控件，以及通过Maker快速创建的属性文本。\n欢迎使用 ",p1), suffix: ("FGToolKit",p2))
             
