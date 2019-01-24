@@ -113,7 +113,16 @@ view.addSubview(loginBtn)
 - [x] Swift 4.x
 
 ## 安装
+- Swift Version < 4.2
+
 ```
 pod repo update
 pod "FGToolKit", "~>2.1"
+```
+
+- Swift Version >= 4.2
+
+```
+pod repo update
+pod "FGToolKit", "~>2.1.1"
 ```
