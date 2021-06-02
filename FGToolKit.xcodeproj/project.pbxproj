@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C35000392667367D00A29A2A /* CGFloatLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35000382667367D00A29A2A /* CGFloatLiteral.swift */; };
 		C35C086B20624FCC00C31866 /* FGWebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C086A20624FCC00C31866 /* FGWebImage.swift */; };
 		C35C086E2062505700C31866 /* Maker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C086C2062505700C31866 /* Maker.swift */; };
 		C35C086F2062505700C31866 /* ImageCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C086D2062505700C31866 /* ImageCropView.swift */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		446B0A53B10AD54ECB765500 /* Pods_FGToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FGToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79AA4D58EC8474092A7AC2B5 /* Pods-FGToolKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGToolKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-FGToolKit/Pods-FGToolKit.release.xcconfig"; sourceTree = "<group>"; };
+		C35000382667367D00A29A2A /* CGFloatLiteral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatLiteral.swift; sourceTree = "<group>"; };
 		C35C086A20624FCC00C31866 /* FGWebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FGWebImage.swift; sourceTree = "<group>"; };
 		C35C086C2062505700C31866 /* Maker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maker.swift; sourceTree = "<group>"; };
 		C35C086D2062505700C31866 /* ImageCropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCropView.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				C35C086D2062505700C31866 /* ImageCropView.swift */,
 				C35C086C2062505700C31866 /* Maker.swift */,
 				C3D08F892133DEE3009B1196 /* UITextFiled+ToolBar.swift */,
+				C35000382667367D00A29A2A /* CGFloatLiteral.swift */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				C3A65820201B0A77009FCA6D /* UIImage+Circle.swift in Sources */,
 				C35C086E2062505700C31866 /* Maker.swift in Sources */,
 				C3A65805201B04E4009FCA6D /* ViewController.swift in Sources */,
+				C35000392667367D00A29A2A /* CGFloatLiteral.swift in Sources */,
 				C35C086F2062505700C31866 /* ImageCropView.swift in Sources */,
 				C3A65803201B04E4009FCA6D /* AppDelegate.swift in Sources */,
 				C3D08F8A2133DEE3009B1196 /* UITextFiled+ToolBar.swift in Sources */,
